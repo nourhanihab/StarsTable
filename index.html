@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Assignment #1</title>
+    </head>
+    <body>
+        <script>
+            function validate() {
+                var x = document.getElementById("maximum").value;
+                if (x < 1)
+                {
+                    alert("Number must be greater than zero!!!!!");
+                    return false;
+                }
+
+            }
+        </script>
+        <h1>Welcome to IA Assignment #1</h1>
+        <form action="show.jsp" method="POST" onsubmit="return validate()">
+            <table border="1">	
+                <tr>
+                    <td align="right">Enter a Maximum:</td>
+                    <td><input type="number" id="maximum" name="maximum"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Show Table"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>
